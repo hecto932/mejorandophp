@@ -15,5 +15,10 @@
 	elseif($_GET['url'] == 'contactos'){
 		require "controllers/contactos.php";
 	}
+	else
+	{
+		header("HTTP/1.0 404 Not Found");
+		exit("Pagina no encontrada");
+	}
 
 	
