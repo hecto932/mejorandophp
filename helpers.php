@@ -7,6 +7,11 @@
 		require "views/$template.tpl.php";
 	}
 
+	function pre($value)
+	{
+		echo "<pre>".print_r($value,true)."</pre>";
+	}
+
 	function controller($name)
 	{
 		if(empty($name))
