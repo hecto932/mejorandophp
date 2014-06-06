@@ -6,7 +6,6 @@
 	</head>
 	<body>
 		<h1>Mejorando.la</h1>
-		Aprendiendo <strong><?= $language ?></strong>
 		<p><a href="index.php?url=contactos">Contactanos</a></p>
 	</body>
 </html>

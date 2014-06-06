@@ -92,6 +92,28 @@ class Request{
 
 		require $controllerFileName;
 		$controller = new $controllerClassName();
-		call_user_func_array([$controller, $actionMethodName], $params);
+		$response = call_user_func_array([$controller, $actionMethodName], $params);
+		
+		$this->executeResponse($response);
+	}
+
+	public function executeResponse($response)
+	{
+		if($response instanceof Response)	//SI ES UNA INSTANCIA DE RESPONSE
+		{
+			$response->execute();
+		}
+		elseif (is_string($response)) 		//SI ES UN STRING
+		{	
+			echo $response;
+		}
+		elseif(is_array($response))			//SI ES UN VECTOR
+		{
+			echo json_encode($response);
+		}
+		else 								//SI NO ES VALIDA
+		{
+			exit("Respuesta no valida.");
+		}
 	}
 }

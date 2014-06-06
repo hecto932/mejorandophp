@@ -4,6 +4,10 @@ class HomeController{
 
 	public function indexAction()
 	{
-		exit("Ya volvemos!");
+		$vars = array(
+			"titulo" => "MejorandoPHP"
+		);
+
+		return new View('home', $vars);
 	}
 }
