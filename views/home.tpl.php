@@ -1,11 +1,2 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title><?= $titulo; ?></title>
-	</head>
-	<body>
-		<h1>Mejorando.la</h1>
-		<p><a href="index.php?url=contactos">Contactanos</a></p>
-	</body>
-</html>
+<h4><?= $titulo; ?></h4>
+<p><a href="contactos">Contactanos</a></p>

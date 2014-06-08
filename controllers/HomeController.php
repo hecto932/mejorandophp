@@ -5,7 +5,7 @@ class HomeController{
 	public function indexAction()
 	{
 		$vars = array(
-			"titulo" => "MejorandoPHP"
+			"titulo" => "Clase2"
 		);
 
 		return new View('home', $vars);

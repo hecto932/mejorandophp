@@ -10,5 +10,8 @@
 		<?= $tpl_content; ?>
 
 		<hr>
+
+		Copyright, ponies 
+		
 	</body>
 </html>
